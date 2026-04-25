@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header: navigation, brand, and language toggle -->
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Jose M. Jimenez">
       <span class="brand-mark">JM</span>
@@ -33,6 +34,7 @@
   </header>
 
   <main>
+    <!-- Hero: main introduction, call to action, portrait, and professional snapshot -->
     <section class="hero" aria-labelledby="hero-title">
       <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
       <div class="hero-overlay"></div>
@@ -49,22 +51,33 @@
         </div>
       </div>
 
-      <aside class="hero-signal" aria-label="Professional snapshot">
-        <div>
-          <span data-i18n="signal.roleLabel">Rol actual</span>
-          <strong data-i18n="signal.role">SDR con background t&eacute;cnico</strong>
-        </div>
-        <div>
-          <span data-i18n="signal.focusLabel">Enfoque</span>
-          <strong data-i18n="signal.focus">Automatizaci&oacute;n, funnels y procesos</strong>
-        </div>
-        <div>
-          <span data-i18n="signal.locationLabel">Base</span>
-          <strong>Caracas, Venezuela</strong>
-        </div>
-      </aside>
+      <div class="hero-aside">
+        <figure class="portrait-card">
+          <img src="assets/profile-placeholder.png" alt="Professional portrait placeholder">
+          <figcaption>
+            <span data-i18n="portrait.label">Foto profesional</span>
+            <strong data-i18n="portrait.status">Imagen temporal</strong>
+          </figcaption>
+        </figure>
+
+        <aside class="hero-signal" aria-label="Professional snapshot">
+          <div>
+            <span data-i18n="signal.roleLabel">Rol actual</span>
+            <strong data-i18n="signal.role">SDR con background t&eacute;cnico</strong>
+          </div>
+          <div>
+            <span data-i18n="signal.focusLabel">Enfoque</span>
+            <strong data-i18n="signal.focus">Automatizaci&oacute;n, funnels y procesos</strong>
+          </div>
+          <div>
+            <span data-i18n="signal.locationLabel">Base</span>
+            <strong>Caracas, Venezuela</strong>
+          </div>
+        </aside>
+      </div>
     </section>
 
+    <!-- Profile: professional summary and positioning -->
     <section class="section intro-band" id="profile">
       <div class="section-label" data-i18n="profile.label">Perfil</div>
       <div class="profile-grid">
@@ -91,6 +104,7 @@
       </div>
     </section>
 
+    <!-- Skills: sales, automation, operations, and technical capabilities -->
     <section class="section skills-section" id="skills">
       <div class="section-heading">
         <div class="section-label" data-i18n="skills.label">Habilidades core</div>
@@ -133,6 +147,7 @@
       </div>
     </section>
 
+    <!-- Highlights: quick stats from training, language level, and professional focus -->
     <section class="section stats-strip" aria-label="Highlights">
       <div>
         <strong>216h</strong>
@@ -152,6 +167,7 @@
       </div>
     </section>
 
+    <!-- Experience: professional roles and responsibilities -->
     <section class="section" id="experience">
       <div class="section-heading">
         <div class="section-label" data-i18n="experience.label">Experiencia</div>
@@ -238,6 +254,7 @@
       </div>
     </section>
 
+    <!-- Automation: transition toward sales automation and funnel operations -->
     <section class="section automation-band" id="automation">
       <div class="automation-copy">
         <div class="section-label" data-i18n="automation.label">Nueva direcci&oacute;n</div>
@@ -267,6 +284,7 @@
       </div>
     </section>
 
+    <!-- Certificates and education: sales education, university background, and technical courses -->
     <section class="section certificates" id="certificates">
       <div class="section-heading">
         <div class="section-label" data-i18n="certificates.label">Certificados</div>
@@ -317,6 +335,7 @@
       </div>
     </section>
 
+    <!-- Contact: email and phone call to action -->
     <section class="section contact-band" id="contact">
       <div>
         <div class="section-label" data-i18n="contact.label">Contacto</div>
@@ -329,6 +348,7 @@
     </section>
   </main>
 
+  <!-- Footer: final positioning line -->
   <footer class="site-footer">
     <p>Jose M. Jimenez</p>
     <p data-i18n="footer.line">SDR, Lead Generation Specialist y Sales Automation Specialist.</p>
