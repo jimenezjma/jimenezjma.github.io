@@ -139,10 +139,10 @@ body[data-lang="en"] .toggle-track::after {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
   align-items: end;
-  gap: clamp(28px, 6vw, 76px);
-  min-height: calc(88svh - 72px);
+  gap: clamp(24px, 5vw, 64px);
+  min-height: calc(82svh - 72px);
   padding: clamp(78px, 10vw, 126px) clamp(18px, 5vw, 72px) clamp(44px, 7vw, 72px);
   overflow: hidden;
   color: var(--white);
@@ -235,14 +235,15 @@ body[data-lang="en"] .toggle-track::after {
 
 .hero-aside {
   display: grid;
-  gap: 16px;
+  gap: 12px;
   align-self: center;
+  justify-items: end;
 }
 
 .portrait-card {
   position: relative;
-  width: min(100%, 360px);
-  max-height: 520px;
+  width: min(100%, 280px);
+  max-height: 350px;
   aspect-ratio: 4 / 5;
   margin: 0;
   overflow: hidden;
@@ -272,6 +273,7 @@ body[data-lang="en"] .toggle-track::after {
 .hero-signal {
   display: grid;
   gap: 1px;
+  width: min(100%, 320px);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius);
@@ -281,7 +283,7 @@ body[data-lang="en"] .toggle-track::after {
 }
 
 .hero-signal div {
-  padding: 20px;
+  padding: 16px;
   background: rgba(255, 255, 255, 0.055);
 }
 
@@ -289,7 +291,7 @@ body[data-lang="en"] .toggle-track::after {
   display: block;
   margin-bottom: 8px;
   color: rgba(255, 255, 255, 0.55);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -297,7 +299,7 @@ body[data-lang="en"] .toggle-track::after {
 .hero-signal strong {
   display: block;
   color: var(--white);
-  font-size: 1rem;
+  font-size: 0.94rem;
   line-height: 1.35;
 }
 
@@ -683,10 +685,21 @@ h2 {
     align-self: stretch;
   }
 
+  .hero-aside {
+    grid-template-columns: 180px minmax(0, 1fr);
+    align-items: stretch;
+    justify-items: stretch;
+    max-width: 620px;
+  }
+
   .portrait-card {
-    width: min(100%, 420px);
-    max-height: 520px;
+    width: 100%;
+    max-height: none;
     justify-self: start;
+  }
+
+  .hero-signal {
+    width: 100%;
   }
 
   .stats-strip,
@@ -725,17 +738,35 @@ h2 {
   }
 
   .hero {
-    padding: 58px 18px 40px;
+    padding: 42px 18px 24px;
   }
 
   .hero h1 {
-    font-size: clamp(3.1rem, 17vw, 4.7rem);
+    font-size: clamp(2.86rem, 15.6vw, 4.05rem);
   }
 
   .portrait-card {
-    width: min(100%, 320px);
-    max-height: 400px;
-    justify-self: center;
+    width: 104px;
+    align-self: start;
+    justify-self: start;
+  }
+
+  .hero-aside {
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .hero-signal div {
+    padding: 9px 10px;
+  }
+
+  .hero-signal span {
+    margin-bottom: 4px;
+    font-size: 0.58rem;
+  }
+
+  .hero-signal strong {
+    font-size: 0.75rem;
   }
 
   .hero-actions,
